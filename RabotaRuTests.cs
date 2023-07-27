@@ -67,15 +67,6 @@ namespace Selenium;
     }
 
     [Test]
-    public void jsExampleTesting()
-    {
-        IJavaScriptExecutor executor = driver;
-        var element = driver.FindElement(By.CssSelector("a[aria-label='Работодателю']"));
-        executor.ExecuteScript("arguments[0].textContent = 'OLOLOLOLO'",
-            element);
-    }
-
-    [Test]
     public void aFactoryTesting()
     {
         var mainPage = new MainPage(driver, wait);
